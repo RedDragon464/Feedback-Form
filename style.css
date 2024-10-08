@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('neonbg.jpg');  
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    padding: 20px;
+    color: #e0e0e0;  
+}
+
+h2{
+    font-weight: bold;
+    text-align: center;
+}
+
+form {
+    width: 350px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);  /* Transparent white */
+    backdrop-filter: blur(10px);  /* Frosted glass effect */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  /* Soft shadow */
+    color: #ffffff;  /* Change text color for contrast */
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    width: 90%; 
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: opacity 0.15s, box-shadow 0.15s;
+}
+
+input:hover, select:hover, textarea:hover{
+    opacity: 0.8;
+    box-shadow: 5px 5px 5px black;
+
+}
+
+input:active, select:active, textarea:active{
+    opacity: 0.4;
+    box-shadow: 5px 5px 5px black;
+}
+
+span.error {
+    display: none;  
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;  
+    height: 15px;     
+}
+
+input:invalid:blur + span.error, select:invalid:blur + span.error, 
+textarea:invalid:blur + span.error {
+    display: block;
+}
+
+input:invalid:blur, select:invalid:blur,textarea:invalid:blur {
+    border: 2px solid red;
+}
+
+
+input:focus, select:focus, textarea:focus {
+    border: 2px solid blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+    outline: none;
+}
+
+
+
+

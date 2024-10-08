@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <script src="script.js" defer></script>
+
+
+    <title>My First Form</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <form id="feedbackForm" novalidate>
+        <h2>Feedback Form</h2><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name here" required>
+        <span class="error" id="nameError">Name is required</span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email address here" required>
+        <span class="error" id="emailError">Email is required</span>
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country" required></select>
+            <option value="">Select a country</option>
+        </select><br>
+        <span class="error" id="countryError">Country is required</span><br>
+
+
+        <label>Interests:</label><br>
+        <input type="checkbox" id="web" name="interest" value="web">
+        <label for="web">Web Development</label><br>
+
+        <input type="checkbox" id="design" name="interest" value="design">
+        <label for="design">Design</label><br>
+
+        <input type="checkbox" id="machine" name="interest" value="machine">
+        <label for="machine">Machine Learning</label><br>
+
+        <br>
+
+        <label for="comments">Feedback:</label>
+        <textarea id="comments" name="comments" rows="5" placeholder="Enter your feedback here"></textarea>
+        <p id="charCount">0/200 characters</p>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>
