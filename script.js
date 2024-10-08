@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Name validation
         if (name.trim() === "") {
-            console.log('Name is missing');  // Log to check if the validation is triggered
-            document.getElementById('nameError').style.display = 'block';  // Show the error message
+            console.log('Name is missing');  
+            document.getElementById('nameError').style.display = 'block';  
             valid = false;
         }
 
@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Country validation
         if (country === "") {
-            console.log('Country is missing');  // Log to check if the validation is triggered
-            document.getElementById('countryError').style.display = 'block';  // Show the error message
+            console.log('Country is missing');  
+            document.getElementById('countryError').style.display = 'block';  
             valid = false;
         }
 
@@ -44,11 +44,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    // Hide the error message
     function clearErrors() {
-        console.log('Clearing previous errors');  // Log to ensure this function runs
-        document.getElementById('nameError').style.display = 'none';  // Hide the error message
-        document.getElementById('emailError').style.display = 'none';  // Hide the error message
-        document.getElementById('countryError').style.display = 'none';  // Hide the error message
+        console.log('Clearing previous errors');  
+        document.getElementById('nameError').style.display = 'none';  
+        document.getElementById('emailError').style.display = 'none';  
+        document.getElementById('countryError').style.display = 'none';  
     }
 
     // Character counter for feedback textarea 
@@ -108,8 +109,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     countries.forEach(function(country) {
         let option = document.createElement('option');
-        option.value = country.toLowerCase();  // Use country names as values
-        option.text = country;  // Visible text in the dropdown
+        option.value = country.toLowerCase();  
+        option.text = country;
         countrySelect.appendChild(option);
     });
 });
